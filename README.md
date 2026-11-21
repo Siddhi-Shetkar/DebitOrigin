@@ -1,4 +1,4 @@
-# DebitOrigin
+# 💳 DebitOrigin
 ### AI-Powered Recurring Payment Consent Verification Platform
 
 > **Every debit must trace back to valid customer consent.**
@@ -11,7 +11,7 @@ DebitOrigin addresses this problem by reconstructing the customer's authorizatio
 
 ---
 
-## The Problem
+## 🚨 The Problem
 
 Consider this scenario:
 
@@ -29,7 +29,7 @@ DebitOrigin investigates exactly this kind of situation.
 
 ---
 
-## Our Signature Feature: Consent Drift Replay
+## 🔍 Our Signature Feature: Consent Drift Replay
 
 Consent Drift Replay is the core feature that differentiates DebitOrigin.
 
@@ -44,29 +44,30 @@ It compares:
 
 If a merchant changes the amount without customer approval, DebitOrigin identifies the mismatch and flags the payment attempt.
 
-**The key idea:** A change in merchant records does not automatically mean a change in customer consent.
+> **The key idea:** A change in merchant records does not automatically mean a change in customer consent.
 
 ---
 
-## Key Features
+## ⚡ Key Features
 
-### 1. AI-Powered Consent Extraction
+### 1. 🤖 AI-Powered Consent Extraction
 - Extract mandate details from uploaded consent documents.
 - Identify merchant, customer, amount, frequency, and validity period.
 - Generate structured consent data using Gemini.
 - Highlight missing or ambiguous information.
 
-### 2. Mandate Event History
+### 2. 📜 Mandate Event History
 - Maintain a chronological history of mandate events.
 - Track consent creation, modifications, pauses, resumptions, revocations, and expiry.
 - Preserve historical events for accurate verification.
 
-### 3. Historical Authorization Reconstruction
+### 3. ⏳ Historical Authorization Reconstruction
 - Replay mandate events to determine authorization at any given timestamp.
 - Compare original consent with subsequent approved changes.
 - Detect unsupported merchant-side modifications.
 
-### 4. Consent Drift Detection
+### 4. 🛡️ Consent Drift Detection
+
 Identify suspicious payment attempts involving:
 - Unauthorized amount increases.
 - Changes in billing frequency.
@@ -76,31 +77,32 @@ Identify suspicious payment attempts involving:
 - Duplicate billing attempts.
 - Missing or insufficient authorization evidence.
 
-### 5. Deterministic Payment Verification
+### 5. ⚖️ Deterministic Payment Verification
+
 Every payment attempt receives an outcome:
 
 | Outcome | Meaning |
 |---|---|
-| VERIFIED | Payment matches valid authorization evidence |
-| FLAGGED | A potential authorization violation is detected |
-| BLOCKED | A defined authorization rule is violated |
-| NEEDS_REVIEW | Available evidence is incomplete or ambiguous |
+| 🟢 VERIFIED | Payment matches valid authorization evidence |
+| 🟠 FLAGGED | A potential authorization violation is detected |
+| 🔴 BLOCKED | A defined authorization rule is violated |
+| 🟡 NEEDS_REVIEW | Available evidence is incomplete or ambiguous |
 
 AI assists with extracting and explaining evidence, while the verification engine makes decisions using deterministic rules.
 
-### 6. AI-Powered Forensic Explanations
+### 6. 🧠 AI-Powered Forensic Explanations
 - Explain why a payment attempt was flagged.
 - Highlight differences between authorized and attempted amounts.
 - Reference relevant mandate events.
 - Generate evidence-based investigation summaries.
 
-### 7. Risk Dashboard
+### 7. 📊 Risk Dashboard
 - Monitor recurring payment attempts.
 - View verified, flagged, blocked, and review-required transactions.
 - Track suspicious payment exposure.
 - Explore violation categories and recent investigations.
 
-### 8. Investigation and Audit Management
+### 8. 🔎 Investigation and Audit Management
 - Investigate individual payment attempts.
 - Review historical authorization timelines.
 - Add investigation notes and record human decisions.
@@ -109,7 +111,7 @@ AI assists with extracting and explaining evidence, while the verification engin
 
 ---
 
-## Technology Stack
+## 🛠️ Technology Stack
 
 | Component | Technology |
 |---|---|
@@ -127,7 +129,7 @@ AI assists with extracting and explaining evidence, while the verification engin
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 ```text
              Consent Documents
@@ -166,7 +168,7 @@ AI assists with extracting and explaining evidence, while the verification engin
 
 ---
 
-## Project Evaluation
+## 📈 Project Evaluation
 
 DebitOrigin will be evaluated using synthetic mandate histories and payment attempts covering both legitimate and suspicious scenarios.
 
@@ -183,7 +185,7 @@ The goal is to measure how effectively the platform identifies payment attempts 
 
 ---
 
-## Security and Design Principles
+## 🔐 Security and Design Principles
 
 - Use synthetic data for development and demonstration.
 - Preserve historical mandate events.
@@ -195,12 +197,14 @@ The goal is to measure how effectively the platform identifies payment attempts 
 
 ---
 
-## Project Information
+## 🏆 Project Information
 
-**Project:** DebitOrigin  
-**Track:** AI Risk Manager  
-**Event:** Razorpay AI Buildathon 2026
+| Detail | Information |
+|---|---|
+| **Project** | DebitOrigin |
+| **Track** | AI Risk Manager |
+| **Event** | Razorpay AI Buildathon 2026 |
 
 DebitOrigin aims to make recurring payments more transparent and trustworthy by ensuring that every debit can be traced back to valid customer authorization.
 
-**Every debit has a history. DebitOrigin makes sure that history adds up.**
+> **Every debit has a history. DebitOrigin makes sure that history adds up.** 💳
