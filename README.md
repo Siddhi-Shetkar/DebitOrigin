@@ -29,7 +29,7 @@ DebitOrigin investigates exactly this kind of situation.
 
 ---
 
-## 🔍 Our Signature Feature: Consent Drift Replay
+## 🔍 Signature Feature: Consent Drift Replay
 
 Consent Drift Replay is the core feature that differentiates DebitOrigin.
 
@@ -170,7 +170,7 @@ AI assists with extracting and explaining evidence, while the verification engin
 
 ## 📈 Project Evaluation
 
-DebitOrigin will be evaluated using synthetic mandate histories and payment attempts covering both legitimate and suspicious scenarios.
+DebitOrigin is designed to be evaluated using synthetic mandate histories and payment attempts covering both legitimate and suspicious scenarios.
 
 Evaluation metrics include:
 
@@ -204,6 +204,7 @@ The goal is to measure how effectively the platform identifies payment attempts 
 | **Project** | DebitOrigin |
 | **Track** | AI Risk Manager |
 | **Event** | Razorpay AI Buildathon 2026 |
+| **Development** | Independent / Solo Project |
 
 DebitOrigin aims to make recurring payments more transparent and trustworthy by ensuring that every debit can be traced back to valid customer authorization.
 
