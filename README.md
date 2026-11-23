@@ -113,19 +113,43 @@ AI assists with extracting and explaining evidence, while the verification engin
 
 ## 🛠️ Technology Stack
 
-| Component | Technology |
-|---|---|
-| Frontend | React, Vite, TypeScript |
-| Styling | Tailwind CSS, shadcn/ui |
-| Backend | Python, FastAPI |
-| Database | PostgreSQL / SQLite |
-| AI Integration | Google Gemini API |
-| Data Processing | Pandas, NumPy |
-| Machine Learning | Scikit-learn |
-| Visualizations | Recharts |
-| Testing | Pytest |
+### AI & Machine Learning
+- **Google Gemini API** – AI-powered consent document extraction and forensic explanations
+- **`@google/genai`** – Gemini SDK integration
 
-*The technology stack may evolve during development.*
+### Frontend
+- **React 19** – Component-based user interface
+- **TypeScript** – Type-safe application development
+- **Vite** – Frontend build tooling
+- **Tailwind CSS v4** – Styling and responsive UI
+- **Recharts** – Data visualization and dashboards
+- **Motion (Framer Motion)** – UI animations and transitions
+- **Lucide React** – Icons
+
+### Backend & Runtime
+- **Node.js** – Backend runtime
+- **Express.js** – REST API and server-side application
+- **TypeScript** – Backend development
+- **tsx** – TypeScript execution
+- **esbuild** – Build and bundling
+- **Bun** – Package management and lockfile
+
+### Database & ORM
+- **PostgreSQL** – Relational database
+- **`pg`** – PostgreSQL client
+- **Drizzle ORM** – Database queries and schema management
+- **Drizzle Kit** – Database migrations and development tools
+
+### Authentication & Cloud Services
+- **Firebase Client SDK** – Client-side Firebase integration
+- **Firebase Admin SDK** – Server-side authentication and administration
+
+### Libraries & Utilities
+- **Zod** – Schema validation
+- **Multer** – File upload handling
+- **jsPDF** – PDF evidence report generation
+- **clsx** – Conditional CSS class management
+- **Tailwind Merge** – Utility class conflict resolution
 
 ---
 
@@ -207,6 +231,3 @@ The goal is to measure how effectively the platform identifies payment attempts 
 | **Development** | Independent / Solo Project |
 
 DebitOrigin aims to make recurring payments more transparent and trustworthy by ensuring that every debit can be traced back to valid customer authorization.
-
-> **Every debit has a history. DebitOrigin makes sure that history adds up.** 💳
->>>>>>> 332157d6c1ac523e7e9b867f0fdaa94a7cc4924e
